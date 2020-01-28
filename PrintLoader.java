@@ -105,8 +105,17 @@ public class PrintLoader{
 
   public static void pushLoad(Stack<Integer> stack, int value, int tot){
 
-    if(THRESHOLD <= tot)
+    if(THRESHOLD <= tot){
       System.out.println("Exceed THRESHOLD value");
+
+      if(tot1 <= THRESHOLD){
+        stack.push(value);
+      }else if(tot2 <= THRESHOLD){
+        stack.push(value);
+      }else{
+        stack.push(value);
+      }
+    }
     else{
       stack.push(value);
     }
